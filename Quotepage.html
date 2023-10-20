@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Readex Pro' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Lato:wght@100;300;400;700;900&family=Noto+Serif:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Lato:wght@100;300;400;700;900&family=Noto+Serif:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <!-- navbar starts -->
+    <div class="container">
+        <nav>
+            <a href="index.html"><img src="image 1Gentlogo.png" alt="Gent Logistics Logo"></a>
+            <ul>
+                <li><a href="Quotepage.html">GET A QUOTE</a></li>
+                <li><a href="">CAREERS</a></li>
+                <li><a href="Contactuspage.html">CONTACT US</a></li>
+                <li><a href="AboutUs.html">ABOUT US</a></li>
+                <li><a href="trackingpage.html" id="trackshipment">Track Shipment</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hero-section-quote starts -->
+
+    <div class="container">
+        <div class="hero-section-quote">
+            <div class="hero-section-quote-content">
+                <h1>Get a Quote with our Calculator</h1>
+                <p>Calculate the estimate cost of our services that you wish to use.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Quote-form page starts -->
+    <div class="container">
+        <div class="quote-page">
+            <div class="quote-details">
+                <div class="measurementunit">
+                    <span>Measurement Unit:</span>
+                    <div class="radiobuttonunit">
+                        <div class="metric">
+                            <input type="radio" id="metric" class="radiobut" name="radioname">
+                            <label for="metric">Metric</label>
+                        </div>
+                        <div class="imperial">
+                            <input type="radio" id="imperial" class="radiobut" name="radioname">
+                            <label for="imperial">Imperial</label>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" id="quote-form">
+                    <div class="quotelabel" id="Servicetype">
+                        <label for="servicetype">Service Type</label>
+                        <input type="text" id="servicetype" placeholder="Select the service">
+                        <img src="Vector.png" alt="">
+                    </div>
+                    <div class="quotelabel" id="Height">
+                        <label for="height">Height (cm)</label>
+                        <input type="text" id="height">
+                    </div>
+                    <div class="quotelabel" id="Width">
+                        <label for="width">Width (cm)</label>
+                        <input type="text" id="width">
+                    </div>
+                    <div class="quotelabel" id="Depth">
+                        <label for="depth">Depth (cm)</label>
+                        <input type="text" id="depth">
+                    </div>
+                    <div class="quotelabel" id="Weight">
+                        <label for="weight">Weight (kg)</label>
+                        <input type="text" id="weight">
+                    </div>
+                    <div class="slidecontainer">
+                        <label for="myRange">Distance (km)</label>
+                        <input type="range" min="1" max="100" value="0" class="sliders" id="myRange">
+                        <input type="text" placeholder="Approx.    00" id="approx">
+                    </div>
+                    <div class="check-box">
+                        <label for="" style="width: 140px;height: 25px;margin-right: 8px;"></label>
+                        <input type="checkbox" id="check_box">
+                        <label for="check_box" id="labeltext">Include insurance in billing (recommended).</label>
+                    </div>
+                    <button>Calculate</button>
+                    <div class="totalcost">
+                        <label for="total-cost">Total Cost</label>
+                        <input type="text" id="total-cost">
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- footer section starts -->
+
+    <div class="container">
+        <footer>
+            <div class="footermenu">
+                <div class="footer-list">
+                    <h1>Services</h1>
+                    <ul>
+                        <li><a href="">Oversea Shipping</a></li>
+                        <li><a href="">Courier Services</a></li>
+                        <li><a href="">B2B Exchange</a></li>
+                        <li><a href="">Logistic Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h1>Links</h1>
+                    <ul>
+                        <li><a href="">Get a Quote</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Achievements</a></li>
+                        <li><a href="">Career</a></li>
+                        <li><a href="">Track Shipment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h1>Contacts</h1>
+                    <ul>
+                        <li><a href="">info@gentlogistics.com</a></li>
+                        <li><a href="">+13237461603</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>© 2022 GentLogistics</p>
+        </footer>
+</body>
+</html>

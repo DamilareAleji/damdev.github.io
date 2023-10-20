@@ -1,0 +1,1562 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Lato:wght@100;300;400;700;900&family=Noto+Serif:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Lato:wght@100;300;400;700;900&family=Noto+Serif:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Lato:wght@100;300;400;700;900&family=Noto+Serif:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Lato:wght@100;300;400;700;900&family=Lora:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* root style */
+
+:root{
+    --mainwhite: #ffffff;
+    --mainblack: #1E1E1E;
+    --mainblue: #0B60A9;
+    --maindarkgrey: #A0A0A0;
+
+}
+
+
+/* Browser Reset Style */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body style */
+
+body{
+    width: 100vw;
+    background-color: black;
+    
+}
+
+/* the container style */
+
+
+.container{
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* -------------Tracking Page Style------------------- */
+
+/* the navbar style */
+
+nav{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 108px;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 80px;
+    padding-left: 56px;
+    background-color: var(--mainwhite);
+    z-index: 50;
+}
+
+nav ul{
+    display: flex;
+    width: 827px;
+    justify-content: space-around;
+}
+
+nav img{
+    width: 234.05px;
+    height: 76px;
+}
+
+nav img:hover{
+    cursor: pointer;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--mainblack);
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+nav ul li a:hover{
+    color: var(--mainblue);
+}
+
+nav #trackshipment{
+    background-color: #0B60A9;
+    width: 216px;
+    height: 65px;
+    padding: 20px 32px;
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+
+/* Hero-section style */
+
+.hero-section{
+    width: 100%;
+    height: 616px;
+    display: flex;
+    flex-direction: column;
+    background: url('Rectangle\ 9.png');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    color: var(--mainwhite);
+    margin-bottom: 46px;
+}
+
+.inputtag{
+    position: relative;
+    width: 1018px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+
+.inputtag input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 32px;
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--maindarkgrey);
+}
+
+.inputtag button{
+    position: absolute;
+    width: 196px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border: none;
+    background-color: var(--mainblue);
+    color: var(--mainwhite);
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.inputtag button:hover{
+    cursor: pointer;
+}
+
+.inputtag img{
+    position: absolute;
+    left: 770px;
+}
+
+.inputtag img:hover{
+    cursor: pointer;
+}
+
+/* tracker-infopage style */
+
+.tracker-infopage{
+    width: 1440px;
+    height: 807px;
+    background-color: var(--mainwhite);
+    padding: 120px 80px 309px;
+}
+
+table{
+    width: 1280px;
+    height: 378px;
+    
+}
+
+#tracker-infotable{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tracker-infotable tr:nth-child(odd){
+    background-color: #E8F2FA;
+    ;
+}
+
+#tracker-infotable tr{
+    width: 100%;
+    height: 54px;
+    padding: 12px 10px;
+}
+
+#tracker-infotable tr td{
+    padding: 12px 10px;
+    color: var(--mainblack);
+}
+
+/* footer starts */
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 389px;
+    background: url('Rectangle\ 8.png');
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer p{
+    position: absolute;
+    bottom: 20px;
+    left: 636px;
+    font-family: 'Readex Pro';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--mainwhite);
+}
+
+footer .footermenu{
+    width: 852px;
+    height: 201px;
+    display: flex;
+    margin: 64px 294px 56px;
+    justify-content: space-between
+}
+
+.footer-list h1{
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    color: var(--mainwhite);
+    margin-bottom: 16px;
+}
+
+.footer-list ul{
+    list-style: none;
+    font-family: 'Readex Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.footer-list ul li{
+    margin-bottom: 12px;
+}
+
+.footer-list ul li a{
+    text-decoration: none;
+    color: var(--mainwhite);
+}
+
+.footer-list ul li a:hover{
+    color: var(--mainblue);
+    transition: 0.3s;
+}
+
+
+
+/* ---------------Contact Us Page Style-------------------- */
+
+/* hero-section starts*/
+
+.hero-section-contactus{
+    position: relative;
+    width: 100%;
+    height: 616px;
+    display: flex;
+    flex-direction: column;
+    background: url('contactus.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section-contactus-content{
+    position: absolute;
+    bottom: 80px;
+    left: 156px;
+    width: 697px;
+    height: 95px;
+}
+
+.hero-section-contactus-content p{
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--mainwhite);
+}
+
+.hero-section-contactus-content h1{
+    margin-bottom: 12px;
+    font-family: 'Lato';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    color: var(--mainwhite);
+}
+
+
+/* contactform starts */
+.contactform-page{
+    position: relative;
+    width: 100%;
+    height: 1691px;
+    background-color: var(--mainwhite);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 157px 166px 181px 154px;
+}
+
+.contactdetails{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 156px;
+}
+
+.contactdetails .contactaddress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.contactdetails .emailaddress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.contactdetails .phoneline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.contactdetails ul{
+    list-style: none;
+}
+
+.contactdetails ul li{
+    font-family: 'Readex Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #415667;
+}
+
+.contactdetails h2{
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #1E1E1E;
+}
+
+.contactus-form{
+    width: 1120px;
+    height: 1120px;
+    border: none;
+    padding: 120px 160px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 36px 0px #1E1E1E29;
+}
+
+.contactus-form .contactform{
+    width: 800px;
+    height: 872px;
+    border: none;
+}
+
+.contactform h1{
+    font-family: 'Lato';
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43.2px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1E1E1E;
+    margin-bottom: 64px;
+}
+
+.label_input{
+    display: flex;
+    flex-direction: column;
+}
+
+.label_input label{
+    font-family: Readex Pro;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.label_input label::after{
+    content: ' *';
+    color: #CF0404;
+}
+
+.label_input #messagelabel::after{
+    content: '';
+}
+
+.label_input input{
+    margin-bottom: 24px;
+    background: #F8F8F8;
+    border: none;
+    width: 800px;
+    height: 56px;
+    border-radius: 4px;
+    padding: 16px;
+    font-family: Readex Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    box-shadow: 0px 2px 6px 0px #0000001F;
+}
+
+.label_input input:hover{
+    box-shadow: 0px 2px 20px 0px #0000001F;
+    transition: 0.3s;
+}
+
+.label_input textarea{
+    width: 800px;
+    height: 272px;
+    border: none;
+    border-radius: 4px;
+    padding: 16px;
+    gap: 10px;
+    background: #F8F8F8;
+    font-family: 'Readex Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    box-shadow: 0px 2px 6px 0px #0000001F;
+    resize: none;
+    margin-bottom: 64px;
+}
+
+.label_input textarea:hover{
+    box-shadow: 0px 2px 20px 0px #0000001F;
+    transition: 0.3s;
+}
+
+.contactform button{
+    width: 100%;
+    height: 57px;
+    border: none;
+    background: #0B60A9;
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--mainwhite);
+}
+
+.contactform button:hover{
+    cursor: pointer;
+    background: rgba(11, 96, 169, .9);
+    transition: 0.3s;
+}
+
+
+/* -----------Quote page style-------------- */
+
+
+/* Hero-section-quote starts */
+
+.hero-section-quote{
+    position: relative;
+    width: 100%;
+    height: 616px;
+    display: flex;
+    flex-direction: column;
+    background: url('quote.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section-quote-content{
+    position: absolute;
+    top: 378px;
+    left: 156px;
+    width: 697px;
+    height: 95px;
+}
+
+.hero-section-quote-content p{
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--mainwhite);
+}
+
+.hero-section-quote-content h1{
+    margin-bottom: 12px;
+    font-family: 'Lato';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    color: var(--mainwhite);
+}
+
+/* Quote-form style starts */
+
+.quote-page{
+    position: relative;
+    width: 100%;
+    height: 1376px;
+    background-color: var(--mainwhite);
+}
+
+.quote-details{
+    position: absolute;
+    width: 1120px;
+    height: 948px;
+    border: none;
+    padding: 120px 160px;
+    left: 160px;
+    top: -88px;
+    background-color: var(--mainwhite);
+    border-radius: 8px;
+    box-shadow: 0px 0px 36px 0px #1E1E1E29;
+}
+
+.measurementunit{
+    display: flex;
+    gap: 10px;
+    width: 250px;
+    height: 56px;
+    font-family: 'Readex Pro';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #1E1E1E;
+    margin-bottom: 24px;
+}
+
+.measurementunit span{
+    width: 140px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.radiobuttonunit{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+}
+
+.radiobut{
+    width: 20px;
+    height: 20px;
+}
+
+.metric, .imperial{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.quote-form{
+    width: 800px;
+}
+
+.quotelabel{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 800px;
+    height: 48px;
+    margin-bottom: 24px;
+}
+
+.quotelabel input{
+    width: 644px;
+    height: 48px;
+    border: 1px solid #a0a0a0;
+    background: linear-gradient(0deg, #f8f8f8, #f8f8f8);
+    border-radius: 4px;
+}
+
+.quotelabel label{
+    width: 140px;
+    height: 25px;
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #1E1E1E;
+}
+
+#servicetype{
+    padding: 8px 16px;
+    font-family: 'Readex Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #a0a0a0;
+}
+
+#Servicetype{
+    position: relative;
+}
+
+#Servicetype img{
+    position: absolute;
+    right: 24.13px;
+    width: 14.87px;
+    height: 8.73px;
+}
+
+#Servicetype img:hover{
+    cursor: pointer;
+}
+
+.slidecontainer{
+    width: 800px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.slidecontainer label{
+    width: 140px;
+    height: 25px;
+    margin-right: 16px;
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #1E1E1E;
+}
+
+.sliders{
+    -webkit-appearance: none; 
+    width: 494px;
+    height: 16px;
+    margin-right: 17px;
+    background: #d6d6d6; 
+    outline: none;
+    border-radius: 20px;
+}
+
+.sliders::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 36px; 
+    height: 36px; 
+    background: url('Frame\ 36\ \(1\).png'); 
+    cursor: pointer; 
+  }
+
+.slidecontainer #approx{
+    width: 133px;
+    height: 32px;
+    font-family: 'Readex Pro';
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12.5px;
+    color: #a0a0a0;
+    padding: 4px 8px 4px 29.5px;
+    border: 1px solid #a0a0a0;
+    background: linear-gradient(0deg, #f8f8f8, #f8f8f8);
+    border-radius: 4px;
+}
+
+.check-box{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 800px;
+    height: 25px;
+    margin-bottom: 64px;
+}
+
+.check-box #check_box{
+    width: 18px;
+    height: 18px;
+    color: #1E1E1E;
+}
+
+
+.check-box #labeltext{
+    font-family: 'Readex Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #a0a0a0;
+}
+
+#quote-form button{
+    width: 100%;
+    height: 57px;
+    padding: 16px 48px 16px 48px;
+    color: var(--mainwhite);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 36px 0px #1E1E1E29;
+    background-color: var(--mainblue);
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 24px;
+}
+
+#quote-form button:hover{
+    cursor: pointer;
+}
+
+.metric, .imperial{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.totalcost{
+    display: flex;
+    align-items: center;
+    width: 800px;
+    height: 46px;
+    gap: 16px;
+}
+
+.totalcost input{
+    width: 644px;
+    height: 46px;
+    border: 1px solid #a0a0a0;
+    background: linear-gradient(0deg, #f8f8f8, #f8f8f8);
+    border-radius: 4px;
+}
+
+.totalcost label{
+    width: 140px;
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #1E1E1E;
+}
+
+
+/* -----------About Us page style-------------- */
+
+
+/* Hero-section-aboutus starts */
+
+.hero-section-aboutus{
+    position: relative;
+    width: 100%;
+    height: 616px;
+    margin-top: -90px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(73, 96, 115, 0.63), rgba(73, 96, 115, 0.63)),
+    url('image\ 2.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+
+/* whatwedohere starts */
+
+.whatwedohere-wrapper{
+    position: relative;
+    width: 100%;
+    height: 838.58px;
+    background-color: var(--mainwhite);
+    padding: 120px 80px 309px;
+}
+
+.whatwedohere-content{
+    position: absolute;
+    width: 100%;
+    height: 727px;
+    bottom: 0;
+    left: 0;
+    background: url('Rectangle\ 7.png');
+}
+
+.bigtext{
+    margin-top: 42px;
+    margin-left: 80px;
+    width: 550px;
+    height: 77px;
+    top: 42px;
+    left: 80px;
+}
+
+.bigtext span{
+    font-family: 'Lato';
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: transparent;
+    -webkit-text-stroke-color: #d6d6d6;
+    -webkit-text-stroke-width: 2px;    
+}
+
+.bigquoteandmaintext{
+    display: flex;
+    width: 1169px;
+    height: 462px;
+    top: 310px;
+    left: 223px;
+    gap: 14px;
+    margin-top: 190px;
+    margin-left: 223px;
+}
+
+.bigquote{
+    width: 160px;
+    height: 368px;
+}
+
+.bigquote span{
+    font-family: 'Helvetica';
+    font-size: 320px;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: transparent;
+    -webkit-text-stroke-color: #d6d6d6;
+    -webkit-text-stroke-width: 2px;
+}
+
+.maintext-writeup p{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #f8f8f8;
+}
+
+.maintext-writeup{
+    width: 975px;
+    height: 360px;
+    margin-top: -45px;
+}
+
+
+/* Ourachievement starts */
+
+.ourachievementsection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 582px;
+    background-color: var(--mainwhite);
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+.ourachievementsection h1{
+    font-family: 'Lato';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6px;
+    color: #1E1E1E;
+}
+
+.achievementstats{
+    width: 1200px;
+    height: 119px;
+    display: flex;
+    justify-content: center;
+}
+
+.achievementstats-unit{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.achievementstats-unit span{
+    font-family: 'Lato';
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 64.8px;
+    color: #08487f;
+}
+
+.achievementstats-unit p{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #415667;
+}
+
+
+/* meet the management starts */
+
+.meetthemanagementsection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 727px;
+    background: url('Rectangle\ 18.png');
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+.meetthemanagementsection h1{
+    position: absolute;
+    top: 39px;
+    left: 80px;
+    font-family: 'Lato';
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: transparent;
+    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-stroke-width: 2px;    
+}
+
+.managementprofile{
+    display: flex;
+    width: 100%;
+    height: 411px;
+    padding: 0 80px;
+    justify-content: space-between;
+}
+
+.individualprofile{
+    width: 300px;
+    height: 411px;
+    justify-content: center;
+    gap: 26.67px;
+}
+
+.managementprofile .profileimage{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 32px;
+}
+
+.profiledetails{
+    width: 217px;
+    height: 79px;
+    padding:0 10px;
+    border-left: 6px solid;
+    border-image: linear-gradient(180deg, rgba(248, 248, 248, 1), rgba(8, 72, 127, 1))1;
+}
+
+.profiledetails p{
+    height: 15px;
+    font-family: 'Readex Pro';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #a0a0a0;
+}
+
+.profiledetails span{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.socialhandles{
+    margin-top: 10px;
+    width: 126px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialhandles img:hover{
+    cursor: pointer;
+}
+
+
+
+/* Transport Infography starts */
+
+.ourtransportinfography{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 926px;
+    background-color: var(--mainwhite);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-left: 147px;
+    padding-right: 147px;
+    padding-top: 116px;
+    padding-bottom: 72px;
+}
+
+.ourtransportinfography h1{
+    font-family: 'Lato';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6px;
+}
+
+
+/* -----------Homepage style-------------- */
+
+
+/* Hero-section-homepage starts */
+
+.Hero-section-homepage{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    margin-top: -80px;
+}
+
+
+
+
+
+/* -----image slider effect---- */
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    height: 900px;
+    position: relative;
+    border-radius: 0;
+  }
+  
+  .slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slider 9s infinite; /* Adjust the animation duration as needed */
+  }
+  
+  .slider .slide:nth-child(1) {
+    background-image: url('Property\ 1=Variant3.png');
+    animation-delay: 0s;
+  }
+  
+  .slider .slide:nth-child(2) {
+    background-image: url('Property\ 1=Variant2.png');
+    animation-delay: -3s;
+  }
+  
+  .slider .slide:nth-child(3) {
+    background-image: url('Property\ 1=Default.png');
+    animation-delay: -6s;
+  }
+  
+  @keyframes slider {
+    0%, 25%, 100% {
+      transform: translateY(0);
+      animation-timing-function: ease;
+    }
+    33.33% {
+      transform: translateY(-100%);
+      animation-timing-function: step-end;
+    }
+    75% {
+      transform: translateY(-100%);
+    }
+    91.67% {
+      transform: translateY(0);
+      animation-timing-function: ease;
+    }
+  }
+
+  /* -----image slider effect---- */
+
+  .hero-section-homepage-content{
+    position: absolute;
+    top: 373px;
+    left: 73px;
+  }
+
+.hero-section-homepage-content h1{
+    width: 800px;
+    height: 186px;
+    font-family: 'Noto Serif';
+    font-weight: 800;
+    font-size: 68px;
+    line-height: 92.62px;
+    color: var(--mainwhite);
+    margin-bottom: 24px;
+    padding:0 37px;
+    border-left: 12px solid;
+    border-image: linear-gradient(180deg, rgba(248, 248, 248, 1), rgba(8, 72, 127, 1))1;
+}
+
+.hero-section-homepage-content p{
+    width: 564px;
+    height: 75px;
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.hero-section-homepage-content button{
+    width: 207px;
+    height: 65px;
+    padding: 20px 48px;
+    background-color: white;
+    border: none;
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #08487f;
+}
+
+.hero-section-homepage-content button:hover{
+    cursor: pointer;
+    background-color: #08487f;
+    color: #ffffff;
+    transition: 0.5s ease-in-out;
+}
+
+
+/* Brand gallery style */
+
+.brands{
+    position: relative;
+    width: 100%;
+    height: 336px;
+    background-color: var(--mainwhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+.carousel-container {
+    width: 956px;
+    height: 89.32px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.logo-carousel {
+    display: inline-block;
+    animation: scroll 12s linear infinite;
+}
+
+.logo-carousel:hover{
+    animation-play-state: paused;
+}
+
+.logo {
+    width: 150px; /* Adjust this width as needed */
+    height: 150px; /* Adjust this height as needed */
+    margin: 0 10px;
+    text-align: center;
+    line-height: 150px;
+    display: inline-block;
+    white-space: normal;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-600px); /* Adjust this value based on logo width and number of logos */
+    }
+}
+
+.arrowsimage{
+    position: absolute;
+    top: 170px;
+}
+
+.arrows{
+    display: flex;
+    gap: 996px;
+}
+
+.arrow1{
+    display: inline-block;
+}
+
+.brands h1{
+    font-family: 'Readex Pro';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.service-strength{
+    position: relative;
+    width: 100%;
+    height: 687px;
+    background-color: var(--mainwhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    padding: 0 80px;
+}
+
+.servicegallery{
+    display: flex;
+    gap: 16px;
+}
+
+.service-strength h3{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.service-strength h1{
+    font-family: 'Lato';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6x;
+    margin-top: -30px;
+}
+
+.service-card{
+    position: relative;
+    width: 305px;
+    height: 270px;
+}
+
+.service-card:hover .service-frontcard{
+    opacity: 0;
+    transition: 0.4s ease-out;
+}
+
+.service-card:hover .service-backcard{
+    opacity: 1;
+}
+
+.service-frontcard{
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-top: 8px solid;
+    border-color: #08487f;
+    padding: 44px 79px 44px 79px;
+    background-color: #F8F8F8;
+    z-index: 23;
+    box-shadow: 0px 0px 36px 0px #1E1E1E29;
+}
+
+.service-frontcard img{
+    width: 72px;
+    height: 72px;
+    margin-bottom: 24px;
+}
+
+.service-frontcard h2{
+    font-family: 'Readex Pro';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #08487f;
+}
+
+.service-backcard{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    padding: 32px 18px;
+    background-color: #08487f;
+    color: var(--mainwhite);
+}
+
+.service-backcard img{
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.service-backcard h4{
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.service-backcard h5{
+    font-family: 'Readex Pro';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+}
+
+.cardh5{
+    display: flex;
+    width: 257px;
+    height: 145px;
+    align-items: center;
+}
+
+.imageheading{
+    display: flex;
+    width: 257px;
+    height: 36px;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.service-strength p{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.service-strength button{
+    width: 247px;
+    height: 65px;
+    padding: 20px 32px;
+    background-color: #0B60A9;
+    color: var(--mainwhite);
+    margin-bottom: 13px;
+    border: none;
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.service-strength button:hover{
+    background-color: var(--mainwhite);
+    border-color: #0B60A9;
+    border: 3px solid;
+    color: #0B60A9;
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+
+
+/* --------------Testimony section style------------------ */
+
+.testimonies{
+    position: relative;
+    width: 100%;
+    height: 864px;
+    background-image: url('Frame\ 63.png');
+    display: flex;
+    padding: 127px 80px;
+    justify-content: space-between;
+}
+
+.testimonybox{
+    position: relative;
+    width: 400px;
+    height: 643px;
+    background-color: rgba(0, 0, 0, .35);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.testimonybox #quotemark{
+    position: absolute;
+    font-size: 300px;
+    font-weight: 700;
+    line-height: 384px;
+    font-family: 'Lora';
+    color: #415667;
+    top: -20px;
+    left: 30px;
+}
+
+.testimonybox #statement{
+    position: absolute;
+    font-family: 'Readex Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 332px;
+    height: 194px;
+    top: 191px;
+    left: 34px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.testifier{
+    position: absolute;
+    width: 250px;
+    height: 63px;
+    bottom: 36px;
+    right: 24px;
+}
+
+.testifier h1{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: right;
+    color: var(--mainwhite);
+}
+
+.testifier h2{
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: right;
+    color: #415667;
+}
+
+
+
+
+/* ---------------- Our Achievement Style ------------------ */
+
+.achievements{
+    position: relative;
+    width: 100%;
+    height: 766px;
+    background-color: var(--mainwhite);
+    display: flex;
+    padding: 120px 84px 279px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievements #question{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #1E1E1E;
+    margin-bottom: 6px;
+}
+
+.achievements h1{
+    font-family: 'Lato';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6px;
+    color: #1E1E1E;
+}
+
+.stats{
+    display: flex;
+    gap: 24px;
+}
+
+.stats-info{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 231px;
+    align-items: center;
+    margin-top: 42px;
+}
+
+.stats-info .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.stats-info h2{
+    font-family: 'Lato';
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 64.8px;
+    color: #cf0404;
+}
+
+.text-data h3{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #415667;
+}
+
+.text-data #textstatement{
+    font-family: 'Readex Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #415667;
+}
